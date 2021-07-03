@@ -54,13 +54,13 @@ jobs:
       - name: Deploy Mongo
         uses: Azure/k8s-deploy@v1
         with:
-          manifest: |
+          manifests: |
             k8s/mongodb/deployment.yaml
             k8s/mongodb/service.yaml
       - name: Deploy Web
         uses: Azure/k8s-deploy@v1
         with:
-          manifest: |
+          manifests: |
             k8s/web/deployment.yaml
             k8s/web/service.yaml
           images: johnypt/rotten-potatoes:vpipe${{ github.run_number }}
