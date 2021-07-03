@@ -14,7 +14,7 @@
       spec:
         containers:
           - name: api
-            image: johnypt/rotten-potatoes:v2
+            image: johnypt/rotten-potatoes
             ports:
               - containerPort: 5000
             env:
